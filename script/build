@@ -1,0 +1,3 @@
+#!/bin/sh
+tar -z -c --exclude ".git" --exclude "docker*" --exclude ".idea" -f ./docker/golang/source.tar.gz ./
+docker build -t fpm-exporter docker/golang/

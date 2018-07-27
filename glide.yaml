@@ -1,0 +1,15 @@
+package: github.com/koluchiy/php-fpm-exporter
+import:
+- package: github.com/pkg/errors
+  version: ^0.8.0
+- package: github.com/prometheus/client_golang
+  version: ^0.9.0-pre1
+  subpackages:
+  - prometheus
+  - prometheus/promhttp
+- package: github.com/tomasen/fcgi_client
+- package: go.uber.org/zap
+  version: ^1.9.0
+- package: golang.org/x/sync
+  subpackages:
+  - errgroup
